@@ -9,11 +9,11 @@ export default function Result({input}) {
     return <table id="result">
         <thead>
             <tr>
-                <th>Year</th>
-                <th>Investment Value</th>
-                <th>Interest (Year)</th>
-                <th>Total Interest</th>
-                <th>Invested Capital</th>
+                <th>년</th>
+                <th>투자 가치</th>
+                <th>이자 (연)</th>
+                <th>총 이자</th>
+                <th>투자 자본</th>
             </tr>
         </thead>
         <tbody>
