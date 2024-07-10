@@ -11,6 +11,8 @@ function App() {
         duration: 10
     });
 
+    const inputIsValid = userInput.duration >= 1;
+
     function handleChange(inputIdentifier, newValue) {
         setUserInput(prevUserInput => {
             return {
@@ -24,7 +26,8 @@ function App() {
       <>
         <Header/>
         <UserInput userInput={userInput} onChange={handleChange} />
-        <Result input={userInput}/>
+        {!inputIsValid && <p className="center">기간은 1 이상으로 입력해주세요.</p>}
+        {inputIsValid && <Result input={userInput}/>}
       </>
 )
 }
